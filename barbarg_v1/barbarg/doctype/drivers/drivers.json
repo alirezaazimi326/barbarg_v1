@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "autoname": "#####",
+ "creation": "2025-03-04 12:16:05.440579",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_name",
+  "password",
+  "section_break_mqmd",
+  "sender_info_column",
+  "sender_full_name",
+  "sender_phone_number",
+  "reciver_info_column"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "sender_full_name",
+   "fieldtype": "Data",
+   "label": "Sender Full Name"
+  },
+  {
+   "fieldname": "sender_phone_number",
+   "fieldtype": "Data",
+   "label": "Sender Phone Number"
+  },
+  {
+   "fieldname": "section_break_mqmd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sender_info_column",
+   "fieldtype": "Column Break",
+   "label": "Sender Info"
+  },
+  {
+   "fieldname": "reciver_info_column",
+   "fieldtype": "Column Break",
+   "label": "Reciver Info"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-04 12:35:49.980767",
+ "modified_by": "Administrator",
+ "module": "BarBarg",
+ "name": "Drivers",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
