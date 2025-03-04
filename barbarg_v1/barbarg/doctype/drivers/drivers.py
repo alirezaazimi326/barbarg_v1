@@ -52,3 +52,19 @@ class Drivers(Document):
             error_msg = f"Error in generate_full_plate: {str(e)}"
             frappe.log_error(error_msg, "Plate Generation Error")
             raise e
+
+    def on_trash(self):
+        """Delete all related logs when driver is deleted"""
+        try:
+            # Get all logs linked to this driver
+            logs = frappe.db.get_all("Drivers Log", filters={"driver": self.name})
+            
+            # Delete each log
+            for log in logs:
+                frappe.delete_doc("Drivers Log", log.name, force=True)
+                
+            frappe.log_error(f"Successfully deleted {len(logs)} logs for driver {self.name}", "Driver Delete")
+        except Exception as e:
+            error_msg = f"Error deleting logs for driver {self.name}: {str(e)}"
+            frappe.log_error(error_msg, "Driver Delete Error")
+            raise e
