@@ -7,7 +7,9 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
+whitelisted = [
+    "barbarg_v1.api.bot.start_bot"
+]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
