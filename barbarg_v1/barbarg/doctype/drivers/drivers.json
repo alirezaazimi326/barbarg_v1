@@ -1,28 +1,51 @@
 {
  "actions": [],
- "autoname": "#####",
+ "autoname": "DRV.#####",
  "creation": "2025-03-04 12:16:05.440579",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "personal_info_tab",
   "user_name",
   "password",
   "section_break_mqmd",
   "sender_info_column",
   "sender_full_name",
   "sender_phone_number",
-  "reciver_info_column"
+  "receiver_info_column",
+  "receiver_full_name",
+  "receiver_phone_number",
+  "car_info_tab",
+  "plate_left",
+  "plate_char",
+  "plate_middle",
+  "plate_right",
+  "full_plate",
+  "products_tab",
+  "product_name",
+  "weight",
+  "packages_number",
+  "packaging_type"
  ],
  "fields": [
   {
+   "fieldname": "personal_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Info"
+  },
+  {
    "fieldname": "user_name",
    "fieldtype": "Data",
-   "label": "User Name"
+   "in_list_view": 1,
+   "label": "User Name",
+   "reqd": 1
   },
   {
    "fieldname": "password",
    "fieldtype": "Data",
-   "label": "Password"
+   "in_list_view": 1,
+   "label": "Password",
+   "reqd": 1
   },
   {
    "fieldname": "sender_full_name",
@@ -44,14 +67,85 @@
    "label": "Sender Info"
   },
   {
-   "fieldname": "reciver_info_column",
+   "fieldname": "receiver_info_column",
    "fieldtype": "Column Break",
-   "label": "Reciver Info"
+   "label": "Receiver Info"
+  },
+  {
+   "fieldname": "receiver_full_name",
+   "fieldtype": "Data",
+   "label": "Receiver Full Name"
+  },
+  {
+   "fieldname": "receiver_phone_number",
+   "fieldtype": "Data",
+   "label": "Receiver Phone Number"
+  },
+  {
+   "fieldname": "car_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Car Info"
+  },
+  {
+   "fieldname": "plate_right",
+   "fieldtype": "Data",
+   "label": "IR Code",
+   "length": 2
+  },
+  {
+   "fieldname": "plate_char",
+   "fieldtype": "Select",
+   "label": "Letter",
+   "options": "الف\nب\nپ\nت\nث\nج\nچ\nح\nخ\nد\nذ\nر\nز\nژ\nس\nش\nص\nض\nط\nظ\nع\nغ\nف\nق\nک\nگ\nل\nم\nن\nو\nه\nی"
+  },
+  {
+   "fieldname": "plate_middle",
+   "fieldtype": "Data",
+   "label": "3 Digits",
+   "length": 3
+  },
+  {
+   "fieldname": "plate_left",
+   "fieldtype": "Data",
+   "label": "2 Left Digits",
+   "length": 2
+  },
+  {
+   "fieldname": "full_plate",
+   "fieldtype": "Data",
+   "label": "Full Plate",
+   "read_only": 1,
+   "bold": 1,
+   "direction": "rtl"
+  },
+  {
+   "fieldname": "products_tab",
+   "fieldtype": "Tab Break",
+   "label": "Products and Cargo"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "label": "Weight"
+  },
+  {
+   "fieldname": "packages_number",
+   "fieldtype": "Int",
+   "label": "Packages Number"
+  },
+  {
+   "fieldname": "packaging_type",
+   "fieldtype": "Data",
+   "label": "Packaging Type"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-04 12:35:49.980767",
+ "modified": "2025-03-04 14:12:16.288216",
  "modified_by": "Administrator",
  "module": "BarBarg",
  "name": "Drivers",
