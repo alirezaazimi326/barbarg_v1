@@ -15,17 +15,26 @@
   "receiver_info_column",
   "receiver_full_name",
   "receiver_phone_number",
-  "car_info_tab",
+  "car_info_section",
   "plate_left",
   "plate_char",
   "plate_middle",
   "plate_right",
   "full_plate",
-  "products_tab",
+  "geo_location_section",
+  "origin_column",
+  "origin_lat",
+  "origin_lng",
+  "destination_column",
+  "destination_lat",
+  "destination_lng",
+  "products_section",
   "product_name",
   "weight",
   "packages_number",
-  "packaging_type"
+  "packaging_type",
+  "cargo_value",
+  "has_insurance"
  ],
  "fields": [
   {
@@ -82,8 +91,8 @@
    "label": "Receiver Phone Number"
   },
   {
-   "fieldname": "car_info_tab",
-   "fieldtype": "Tab Break",
+   "fieldname": "car_info_section",
+   "fieldtype": "Section Break",
    "label": "Car Info"
   },
   {
@@ -119,8 +128,47 @@
    "direction": "rtl"
   },
   {
-   "fieldname": "products_tab",
-   "fieldtype": "Tab Break",
+   "fieldname": "geo_location_section",
+   "fieldtype": "Section Break",
+   "label": "Geo Location"
+  },
+  {
+   "fieldname": "origin_column",
+   "fieldtype": "Column Break",
+   "label": "Origin"
+  },
+  {
+   "fieldname": "origin_lat",
+   "fieldtype": "Float",
+   "label": "Origin Latitude",
+   "precision": 6
+  },
+  {
+   "fieldname": "origin_lng",
+   "fieldtype": "Float",
+   "label": "Origin Longitude",
+   "precision": 6
+  },
+  {
+   "fieldname": "destination_column",
+   "fieldtype": "Column Break",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "destination_lat",
+   "fieldtype": "Float",
+   "label": "Destination Latitude",
+   "precision": 6
+  },
+  {
+   "fieldname": "destination_lng",
+   "fieldtype": "Float",
+   "label": "Destination Longitude",
+   "precision": 6
+  },
+  {
+   "fieldname": "products_section",
+   "fieldtype": "Section Break",
    "label": "Products and Cargo"
   },
   {
@@ -142,6 +190,18 @@
    "fieldname": "packaging_type",
    "fieldtype": "Data",
    "label": "Packaging Type"
+  },
+  {
+   "fieldname": "cargo_value",
+   "fieldtype": "Data",
+   "label": "Cargo Value",
+   "description": "Value of cargo in Rials"
+  },
+  {
+   "fieldname": "has_insurance",
+   "fieldtype": "Check",
+   "label": "Has Insurance",
+   "default": 0
   }
  ],
  "links": [],
