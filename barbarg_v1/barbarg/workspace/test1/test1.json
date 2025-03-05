@@ -1,0 +1,34 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"v2_3sLsgKc\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">test1</span>\",\"col\":12}},{\"id\":\"e75sFavoOY\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Bot Panel Block\",\"col\":12}}]",
+ "creation": "2025-03-05 19:34:28.337125",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Bot Panel Block",
+   "label": "Bot Panel Block"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "unhide",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "test1",
+ "links": [],
+ "modified": "2025-03-05 19:36:50.263042",
+ "modified_by": "Administrator",
+ "module": "BarBarg",
+ "name": "test1",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [],
+ "title": "test1"
+}
